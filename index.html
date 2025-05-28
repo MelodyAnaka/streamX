@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="StreamX – Stream unlimited movies, TV shows, and more.">
+    <meta property="og:title" content="StreamX">
+    <meta property="og:image" content="thumbnail.jpg">
+    <meta property="og:description" content="Unlimited entertainment, anywhere.">
 </head>
 <body>
     <header>
@@ -400,11 +404,8 @@
                 <h6>Just hit next</h6>
               </div>
             </div>
-          </div>
-          
-          
+          </div>  
     </section>
-
 
     <section class="section--CTA">
         <div class="container grid">
@@ -424,47 +425,33 @@
           </form>
         </div>
       </section>
-
-
-      <!-- <script>
-         const toggleSwitch = document.getElementById('toggleSwitch');
-        const monthlyLabel = document.getElementById('monthlyLabel');
-        const yearlyLabel = document.getElementById('yearlyLabel');
-        const priceAmounts = document.querySelectorAll('.price-amount');
-        
-        let isYearly = false;
-        
-        const monthlyPrices = ['$99', '$299', '$499'];
-        const yearlyPrices = ['$990', '$2990', '$4990'];
-        
-        function updatePricing() {
-            const prices = isYearly ? yearlyPrices : monthlyPrices;
-            const period = isYearly ? '/year' : '/month';
-            
-            priceAmounts.forEach((priceEl, index) => {
-                priceEl.textContent = prices[index];
-                priceEl.nextElementSibling.textContent = period;
-            });
-        }
-        
-        function togglePricing() {
-            isYearly = !isYearly;
-            toggleSwitch.classList.toggle('yearly', isYearly);
-            monthlyLabel.classList.toggle('active', !isYearly);
-            yearlyLabel.classList.toggle('active', isYearly);
-            updatePricing();
-        }
-        
-        toggleSwitch.addEventListener('click', togglePricing);
-        monthlyLabel.addEventListener('click', () => {
-            if (isYearly) togglePricing();
-        });
-        yearlyLabel.addEventListener('click', () => {
-            if (!isYearly) togglePricing();
-        });
-      </script> -->
-    <footer>
-        <p>&copy; 2023 Made with Love by Melody. All rights reserved.</p>
-    </footer>
+      <footer class="footer">
+        <div class="footer-left">
+          <div class="logo">
+            <img src="apple-touch-icon.png" alt="StreamX Icon" class="logo-icon">
+            <span>StreamX</span>
+          </div>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-right">
+          <ul class="footer-nav">
+            <li><a href="#">MOVIES</a></li>
+            <li><a href="#">TOP RATED</a></li>
+            <li><a href="#">TV SERIES</a></li>
+            <li><a href="#">PRICING</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-bottom">
+          <hr class="footer-divider">
+          <p>&copy; 2025 MelodyAnaka. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
 </html>
