@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StreamX</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -14,40 +16,48 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Movie</a></li>
-                <li><a href="#">Top Rated</a></li>
-                <li><a href="#">TV Series</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#">MOVIES</a></li>
+                <li><a href="#">TOP RATED</a></li>
+                <li><a href="#">TV SERIES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#" class="sign-in-btn">SIGN IN</a></li>
             </ul>
         </nav>
-        <button class="sign-in">Sign In</button>
+        <label for="language">
+            <select name="language" id="language">
+            <option value="english">English</option>
+            </select>
+        </label>  
     </header>
     <section class="hero">
         <div class="hero-content">
             <h2>StreamX</h2>
-            <h1>Unlimited <span>Movie</span>, TV Shows, & More.</h1>
+            <h1>Unlimited <span>Movies</span>, TVs Shows, & More.</h1>
             <div class="movie-info">
-                <span class="badge">PG 18</span>
-                <span class="badge">HD</span>
+                <span class="badge badge-pg">PG 18</span>
+                <span class="badge badge-hd">HD</span>
                 <span>Romance, Drama</span>
                 <span>📅 2022</span>
                 <span>⏳ 128 min</span>
             </div>
-            <button class="watch-now">▶ Watch Now</button>
+            <button class="watch-now">▶ WATCH NOW</button>
         </div>
         <div class="hero-image">
         </div>
     </section>
     
     <section class="upcoming-movies">
+        <div class="upcoming-movies-header"> 
+            <div>
         <h3 class="section-subtitle">ONLINE STREAMING</h3>
         <h2 class="section-title">Upcoming Movies</h2>
-        
+           </div>
         <div class="category-buttons">
             <button class="active">Movies</button>
             <button>TV Shows</button>
             <button>Anime</button>
         </div>
+    </div>
 
         <div class="movies-grid">
             <div class="movie-card">
@@ -80,13 +90,379 @@
         </div>
     </section>
 
-    <section>
-        <div>
-
+    
+    <section class="services">
+        <div class="services-container">
+            <!-- Left side with promo card -->
+            <div class="promo-card">
+                <div class="promo-content">
+                    <div class="promo-image">
+                        <!-- This is your mustache/glasses image -->
+                        <img src="service-banner.jpg" >
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right side content -->
+            <div class="services-content">
+                <!-- Our Services heading -->
+                <div class="section-label">
+                    <span class="yellow-line"></span>
+                    <p>OUR SERVICES</p>
+                </div>
+    
+                <!-- Main heading -->
+                <h1>Download Your Shows.</h1> 
+                <h1>Watch Offline.</h1>
+    
+                <!-- Main description -->
+                <p class="main-description">
+                    Elevate your entertainment with our versatile services. Download and enjoy
+                    your favorite shows anywhere. Unleash the convenience of offline viewing
+                    on the go.
+                </p>
+    
+                <!-- Features container -->
+                <div class="features-container">
+                    <!-- Download button -->
+                    <div class="download-btn">
+                        <div class="vertical-text">
+                            <span>D</span>
+                            <span>O</span>
+                            <span>W</span>
+                            <span>N</span>
+                            <span>L</span>
+                            <span>O</span>
+                            <span>A</span>
+                            <span>D</span>
+                        </div>
+                        <div class="download-icon">
+                            <i class='bx bxs-download'></i>
+                        </div>
+                    </div>
+    
+                    <!-- Features -->
+                    <div class="features">
+                        <!-- Feature 1: TV Viewing -->
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class='bx bxs-tv bx-rotate-180'></i>
+                            </div>
+                            <div class="feature-text">
+                                <h2>Enjoy On Your TV.</h2>
+                                <p>Immerse yourself in a world of entertainment on your TV with
+                                seamless streaming and make the most of your leisure time.</p>
+                            </div>
+                        </div>
+    
+                        <!-- Feature 2: Watch Everywhere -->
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class='bx bxs-video'></i>
+                            </div>
+                            <div class="feature-text">
+                                <h2>Watch Everywhere.</h2>
+                                <p>Elevate your movie-watching journey and enjoy the magic of
+                                cinema wherever you are.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Back to top button -->
+        <div class="back-to-top"> 
         </div>
     </section>
 
+    <div class="top-rated-section">
+        <div class="header">
+          <p class="online-streaming">ONLINE STREAMING</p>
+          <h2>Top Rated Movies</h2>
+     </div>
+        
+    <div class="navigation">
+        <ul>
+          <li><a href="#">MOVIES</a></li>
+          <li><a href="#">TV SHOWS</a></li>
+          <li><a href="#">DOCUMENTARY</a></li>
+          <li><a href="#">SPORTS</a></li>
+        </ul>
+      </div>
 
+    
+  <div class="movie-posters-container">
+    <div class="movie-poster">
+      <img src="movie-1.webp" alt="Sonic the Hedgehog 2">
+      <p class="year">2022</p>
+      <h4>Sonic The Hedgehog</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    <div class="movie-poster">
+      <img src="movie-2.webp" alt="Morbius">
+      <p class="year">2022</p>
+      <h4>Morbius</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    <div class="movie-poster">
+      <img src="movie-3.webp" alt="The Adam Project">
+      <p class="year">2022</p>
+      <h4>The Adam Project</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    <div class="movie-poster">
+      <img src="movie-4.webp" alt="Free Guy">
+      <p class="year">2022</p>
+      <h4>Free Guy</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    <div class="movie-poster">
+      <img src="movie-5.webp" alt="Batman">
+      <p class="year">2022</p>
+      <h4>Batman</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    <div class="movie-poster">
+      <img src="movie-6.webp" alt="Uncharted">
+      <p class="year">2022</p>
+      <h4>Uncharted</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    <div class="movie-poster">
+      <img src="movie-7.webp" alt="Death on the nile">
+      <p class="year">2022</p>
+      <h4>Death On The Nile</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    <div class="movie-poster">
+      <img src="movie-8.webp" alt="Kingsman">
+      <p class="year">2022</p>
+      <h4>Kingsman</h4>
+      <p class="details"><span class="quality">HD</span> 107 min ⭐ NR</p>
+    </div>
+    </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-button">↑</div>
+  </div>
+</div>
+
+
+     <section id="Best-tv-series">
+    <div class="header">
+        <h4>BEST TV SERIES</h4>
+        <h2>World Best TV Series</h2>
+    </div>
+
+        <!-- <div class="category-buttons">
+            <button class="active">Series</button>
+            <button>Change me</button>
+            <button>Change me</button>
+        </div> -->
+
+        <div class="series-grid">
+            <div class="series-card">
+                <img src="series-1.webp" alt="MOON KNIGHT">
+                <p class="year">2024</p>
+                <h4>MOON KNIGHT</h4>
+                <p class="details"><span class="quality">HD</span> 137 min ⭐ 8.5</p>
+            </div>
+            <div class="series-card">
+                <img src="series-2.webp" alt="HALO">
+                <p class="year">2024</p>
+                <h4>HALO</h4>
+                <p class="details"><span class="quality">HD</span> 137 min ⭐ 8.5</p>
+            </div>
+            <div class="series-card">
+                <img src="series-3.webp" alt="something">
+                <p class="year">2024</p>
+                <h4>VIKINGS</h4>
+                <p class="details"><span class="quality">HD</span> 137 min ⭐ 8.5</p>
+            </div>
+            <div class="series-card">
+                <img src="series-4.webp" alt="something">
+                <p class="year">2024</p>
+                <h4>MONEY HEIST</h4>
+                <p class="details"><span class="quality">HD</span> 137 min ⭐ 8.5</p>
+            </div>
+        </div>    
+    </section>
+
+    <section class="pricing-plans">
+        <h4>PRICING PLANS</h4>
+        <h3>Get Premium free for 1 month</h3>
+        
+        <!-- Hidden checkbox for CSS-only toggle -->
+        <input type="checkbox" id="pricing-toggle">
+        
+        <div class="toggle-container">
+            <label for="pricing-toggle" class="toggle-label monthly-label">Monthly</label>
+            <label for="pricing-toggle" class="toggle-switch"></label>
+            <label for="pricing-toggle" class="toggle-label yearly-label">Yearly</label>
+        </div>
+        
+        <div class="pricing-cards">
+            <!-- Basic Plan -->
+            <div class="card">
+                <h3>Basic</h3>
+                <h6>Starter</h6>
+                <!-- Monthly pricing (shown by default) -->
+                <div class="price monthly-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <!-- Yearly pricing (hidden by default) -->
+                <div class="price yearly-price">
+                    <span class="price-amount">$990</span>
+                    <span class="price-period">/year</span>
+                </div>
+                <ul class="features">
+                    <li>Ad-free Streaming</li>
+                    <li>1080p video quality</li>
+                    <li>2 Signin devices</li>
+                    <li>30 movies Download</li>
+                    <li class="disabled">Casting</li>
+                </ul>
+                <button class="get-started-btn">Get started</button>
+            </div>
+            
+            <!-- Standard Plan (Popular) -->
+            <div class="card popular">
+                <h3>Standard</h3>
+                <h6>Better results</h6>
+                <!-- Monthly pricing (shown by default) -->
+                <div class="price monthly-price">
+                    <span class="price-amount">$299</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <!-- Yearly pricing (hidden by default) -->
+                <div class="price yearly-price">
+                    <span class="price-amount">$2990</span>
+                    <span class="price-period">/year</span>
+                </div>
+                <ul class="features">
+                    <li>Ad-free Streaming</li>
+                    <li>4k video quality</li>
+                    <li>4 Signin devices</li>
+                    <li>90 movies Download</li>
+                    <li>Supports Casting</li>
+                </ul>
+                <button class="get-started-btn">Get started</button>
+            </div>
+            
+            <!-- Premium Plan -->
+            <div class="card">
+                <h3>Premium</h3>
+                <h6>Go all in one</h6>
+                <!-- Monthly pricing (shown by default) -->
+                <div class="price monthly-price">
+                    <span class="price-amount">$499</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <!-- Yearly pricing (hidden by default) -->
+                <div class="price yearly-price">
+                    <span class="price-amount">$4990</span>
+                    <span class="price-period">/year</span>
+                </div>
+                <ul class="features">
+                    <li>Ad-free Streaming</li>
+                    <li>8k video quality</li>
+                    <li>7 Signin devices</li>
+                    <li>Unlimited Downloads</li>
+                    <li>Supports multicasting</li>
+                </ul>
+                <button class="get-started-btn">Get started</button>
+            </div>
+        </div>
+
+        <div class="extra-info">
+            <p class="info-heading">Why go Premium?</p>
+            <div class="info-grid">
+              <div class="info-item">
+                <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                <h4>Download Movies</h4>
+                <h6>Enjoy watching offline</h6>
+              </div>
+              <div class="info-item">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <h4>Multiple devices</h4>
+                <h6>stream on mobile</h6>
+              </div>
+              <div class="info-item">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <h4>Ad-free Streaming</h4>
+                <h6>Enjoy shows uninterrupted</h6>
+              </div>
+              <div class="info-item">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <h4>Unlimited Movies</h4>
+                <h6>Just hit next</h6>
+              </div>
+            </div>
+          </div>
+          
+          
+    </section>
+
+
+    <section class="section--CTA">
+        <div class="container grid">
+          <div class="cta-text">
+            <h3 class="tertiary-text--2">trial start first 30 days.</h3>
+            <p class="cta-more">
+              Enter your email to create or restart your membership.
+            </p>
+          </div>
+
+          <form class="email-holder grid" method="post"><input type="hidden" name="form-name" value="form 1">
+            <input hidden="" name="bot-field">
+            <label for="email">
+              <input class="email-input" name="email" placeholder="Type your email" type="email">
+            </label>
+            <button class="btn btn--big btn-submit">Get started</button>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- <script>
+         const toggleSwitch = document.getElementById('toggleSwitch');
+        const monthlyLabel = document.getElementById('monthlyLabel');
+        const yearlyLabel = document.getElementById('yearlyLabel');
+        const priceAmounts = document.querySelectorAll('.price-amount');
+        
+        let isYearly = false;
+        
+        const monthlyPrices = ['$99', '$299', '$499'];
+        const yearlyPrices = ['$990', '$2990', '$4990'];
+        
+        function updatePricing() {
+            const prices = isYearly ? yearlyPrices : monthlyPrices;
+            const period = isYearly ? '/year' : '/month';
+            
+            priceAmounts.forEach((priceEl, index) => {
+                priceEl.textContent = prices[index];
+                priceEl.nextElementSibling.textContent = period;
+            });
+        }
+        
+        function togglePricing() {
+            isYearly = !isYearly;
+            toggleSwitch.classList.toggle('yearly', isYearly);
+            monthlyLabel.classList.toggle('active', !isYearly);
+            yearlyLabel.classList.toggle('active', isYearly);
+            updatePricing();
+        }
+        
+        toggleSwitch.addEventListener('click', togglePricing);
+        monthlyLabel.addEventListener('click', () => {
+            if (isYearly) togglePricing();
+        });
+        yearlyLabel.addEventListener('click', () => {
+            if (!isYearly) togglePricing();
+        });
+      </script> -->
     <footer>
         <p>&copy; 2023 Made with Love by Melody. All rights reserved.</p>
     </footer>
